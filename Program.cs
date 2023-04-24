@@ -11,9 +11,10 @@ namespace Day2PracticeProblem
         static void Main(string[] args)
         {
             int Ram = 0;
+            int num=20;
             int Sham = 1;
             Random random= new Random();
-            for(int i=1; i<=20; i++)
+            while(num>0)
             {
                int check= random.Next()%2;
               
@@ -25,6 +26,7 @@ namespace Day2PracticeProblem
                 {
                     Sham++;
                 }
+                num--;
             }
             if(Ram > Sham)
             {

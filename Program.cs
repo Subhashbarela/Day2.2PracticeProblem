@@ -10,7 +10,19 @@ namespace Day2PracticeProblem
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to Day 2 Practice Problem");
+            Console.WriteLine("Please insert the string to reverse");
+            string str =Console.ReadLine();
+            string reverse = "";
+
+            int length = str.Length - 1;
+
+            while (length >= 0)
+            {
+                reverse = reverse + str[length];
+                length--;
+            }
+            Console.WriteLine(reverse);
+
         }
     }
 }

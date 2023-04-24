@@ -10,7 +10,14 @@ namespace Day2PracticeProblem
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to Day 2 Practice Problem");
+            Console.WriteLine("Please insert the number to find factorial");
+            int num=int.Parse(Console.ReadLine());
+            int fact = 1;
+            for(int i=1; i<=num; i++)
+            {
+                fact *= i;
+            }
+            Console.WriteLine("factorial of given number is: "+fact);
         }
     }
 }

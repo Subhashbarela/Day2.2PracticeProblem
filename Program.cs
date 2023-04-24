@@ -10,7 +10,26 @@ namespace Day2PracticeProblem
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to Day 2 Practice Problem");
+            Console.WriteLine("Please insert number One");
+            int num1=int.Parse(Console.ReadLine());
+            Console.WriteLine("Please insert number Two");
+            int num2 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Please insert number Three");
+            int num3 = int.Parse(Console.ReadLine());
+
+            if(num1 > num2 && num1>num3)
+            {
+                Console.WriteLine("num1 is greater ");
+            }
+            else if(num2> num1 && num2>num3)
+            {
+                Console.WriteLine("numm2 is greater");
+            }
+            else
+            {
+                Console.WriteLine("num3 is greater");
+            }
+           
         }
     }
 }

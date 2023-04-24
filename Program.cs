@@ -10,7 +10,19 @@ namespace Day2PracticeProblem
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to Day 2 Practice Problem");
+            Console.WriteLine("Pleasr insert the number to find sum of square");
+            int num=int.Parse(Console.ReadLine());
+            int sum = 0;
+            int sqr = 0;
+            for(int i=1; i<=num; i++)
+            {
+                sqr= i * i;
+                Console.WriteLine(sqr);
+                sum += sqr;
+            }
+            Console.WriteLine("Total sum of given Square is: "+sum);
+
+            Console.ReadLine();
         }
     }
 }

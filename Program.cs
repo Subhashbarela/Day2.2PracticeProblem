@@ -10,7 +10,17 @@ namespace Day2PracticeProblem
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to Day 2 Practice Problem");
+            Console.WriteLine("Enter the number to check even or odd: "); 
+            int num=int.Parse(Console.ReadLine());
+            if(num%2==0 )
+            {
+                Console.WriteLine(" Number {0} Is Even: ",num);
+            }
+            else
+            {
+                Console.WriteLine(" Number {0} Is Odd: ",num);
+                Console.ReadLine();
+            }
         }
     }
 }
